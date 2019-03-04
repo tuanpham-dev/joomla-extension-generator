@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.7" type="plugin" group="extgenerator" method="upgrade">
+	<name>plg_extgenerator_jmodule</name>
+	<author>ExtStore</author>
+	<creationDate>March 2019</creationDate>
+	<copyright>Copyright (C) 2019 ExtStore. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@extstore.com</authorEmail>
+	<authorUrl>extstore.com</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_EXTGENERATOR_JMODULE_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="jmodule">jmodule.php</filename>
+		<folder>forms</folder>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_extgenerator_jmodule.ini</language>
+		<language tag="en-GB">en-GB.plg_extgenerator_jmodule.sys.ini</language>
+	</languages>
+</extension>

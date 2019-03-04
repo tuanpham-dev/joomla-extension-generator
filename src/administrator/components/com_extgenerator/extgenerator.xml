@@ -1,0 +1,46 @@
+<extension type="component" version="1.7" method="upgrade">
+	<name>com_extgenerator</name>
+	<author>ExtStore</author>
+	<creationDate>March 2019</creationDate>
+	<copyright>(c) 2019 ExtStore. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>admin@extstore.com</authorEmail>
+	<authorUrl>https://extstore.com</authorUrl>
+	<version>1.0.0</version>
+	<description>
+	<![CDATA[
+		Extension Generator for Joomla 3.x
+	]]>
+	</description>
+
+	<scriptfile>install.php</scriptfile>
+
+	<files folder="site">
+		<filename>extgenerator.php</filename>
+		<filename>controller.php</filename>
+		<filename>router.php</filename>
+		<folder>libraries</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+
+	<media folder="media" destination="com_extgenerator">
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+	</media>
+
+	<languages folder="site">
+		<language tag="en-GB">language/en-GB.com_extgenerator.ini</language>
+	</languages>
+
+	<administration>
+		<files folder="admin">
+		</files>
+
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB.com_extgenerator.ini</language>
+			<language tag="en-GB">language/en-GB.com_extgenerator.sys.ini</language>
+		</languages>
+	</administration>
+</extension>

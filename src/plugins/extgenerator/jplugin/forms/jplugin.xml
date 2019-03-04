@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * @copyright	Copyright (c) 2019 ExtStore (http://extstore.com). All rights reserved.
+ * @license		http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU/GPL version 2
+ */
+-->
+<form>
+	<field name="namespace" type="text"
+		class="inputbox input-block-level"
+		description="PLG_EXTGENERATOR_JPLUGIN_NAMESPACE_DESC"
+		filter="string"
+		label="PLG_EXTGENERATOR_JPLUGIN_NAMESPACE_LABEL"
+		message="PLG_EXTGENERATOR_JPLUGIN_NAMESPACE_MESSAGE"
+		required="true"
+		size="50"
+		default="ExtStore, Skyline Technology Ltd, http://extstore.com, "
+	/>
+	
+	<field name="name" type="text"
+		class="inputbox input-block-level"
+		description="PLG_EXTGENERATOR_JPLUGIN_NAME_DESC"
+		filter="string"
+		label="PLG_EXTGENERATOR_JPLUGIN_NAME_LABEL"
+		message="PLG_EXTGENERATOR_JPLUGIN_NAME_MESSAGE"
+		required="true"
+		size="50"
+	/>
+
+	<field name="group" type="text"
+		class="inputbox input-block-level"
+		description="PLG_EXTGENERATOR_JPLUGIN_GROUP_DESC"
+		filter="string"
+		label="PLG_EXTGENERATOR_JPLUGIN_GROUP_LABEL"
+		message="PLG_EXTGENERATOR_JPLUGIN_GROUP_MESSAGE"
+		required="true"
+		size="50"
+	/>
+
+	<field name="author" type="text"
+		class="inputbox input-block-level"
+		description="PLG_EXTGENERATOR_JPLUGIN_AUTHOR_DESC"
+		filter="string"
+		label="PLG_EXTGENERATOR_JPLUGIN_AUTHOR_LABEL"
+		message="PLG_EXTGENERATOR_JPLUGIN_AUTHOR_MESSAGE"
+		required="true"
+		size="50"
+		default="ExtStore, admin@extstore.com"
+	/>
+
+	<field name="description" type="editor" buttons="false"
+		class="inputbox input-block-level"
+		description="PLG_EXTGENERATOR_JPLUGIN_DESCRIPTION_DESC"
+		filter="raw"
+		label="PLG_EXTGENERATOR_JPLUGIN_DESCRIPTION_LABEL"
+		message="PLG_EXTGENERATOR_JPLUGIN_DESCRIPTION_MESSAGE"
+		required="false"
+		cols="100"
+		rows="5"
+		default=""
+	/>
+
+</form>

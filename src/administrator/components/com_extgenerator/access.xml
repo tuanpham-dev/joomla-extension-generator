@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<access component="com_extgenerator">
+	<section name="component">
+		<action name="extension.create" title="COM_EXTGENERATOR_PERM_CREATE_LABEL" description="COM_EXTGENERATOR_PERM_CREATE_DESC" />
+	</section>
+</access>

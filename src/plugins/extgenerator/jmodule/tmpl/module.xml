@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * @copyright	Copyright (c) {{year}} {{namespaceN}}{{#website}} ({{website}}){{/website}}. All rights reserved.
+ * @license		http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+-->
+<extension type="module" version="3.0" client="site" method="upgrade">
+	<name>{{namespaceC}} {{moduleN}}</name>
+	<author>{{authorN}}</author>
+	<creationDate>{{month}} {{year}}</creationDate>
+	<copyright>Copyright (c) {{year}} {{namespaceC}}. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>{{email}}</authorEmail>
+	<authorUrl>{{website}}</authorUrl>
+	<version>1.0.0</version>
+	<description>
+	<![CDATA[
+	{{{descriptionN}}}
+	]]>
+	</description>
+
+	<files>
+		<filename module="mod_{{prefix}}{{module}}">mod_{{prefix}}{{module}}.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+
+	{{#assets}}
+	<media folder="media" destination="mod_{{prefix}}{{module}}">
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<filename>index.html</filename>
+	</media>
+
+	{{/assets}}
+	<languages>
+		<language tag="en-GB">en-GB.mod_{{prefix}}{{module}}.ini</language>
+		<language tag="en-GB">en-GB.mod_{{prefix}}{{module}}.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+
+
+			</fieldset>
+
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+				/>
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+				/>
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC"
+				>
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC"
+				/>
+
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static"
+				>
+					<option value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

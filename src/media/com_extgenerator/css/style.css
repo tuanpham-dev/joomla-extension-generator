@@ -1,0 +1,70 @@
+/**
+ * @copyright	Copyright (c) 2019 ExtStore (http://extstore.com). All rights reserved.
+ * @license		http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU/GPL version 2
+ */
+
+.extgen-form .controls {
+	position: relative;
+}
+
+.extgen-form .fieldDetails {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	*top: -1px;
+	border: 0;
+	background: url(../images/details.png) no-repeat left center transparent;
+	cursor: pointer;
+}
+
+.extgen-form #table-container .fieldDetails {
+	top: 28px;
+}
+
+.extgen-form #addtable,
+.extgen-form #addext {
+	background: transparent url(../images/add.png) no-repeat 0 0;
+	padding-left: 20px;
+	margin-right: 20px;
+	padding-bottom: 2px;
+	color: #00ABFF;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.extgen-form #removetable,
+.extgen-form #removeext {
+	background: transparent url(../images/delete.png) no-repeat 0 0;
+	padding-left: 20px;
+	padding-bottom: 2px;
+	color: #00ABFF;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.extgen-form .table-action {
+	margin-bottom: -20px;
+}
+
+.extgen-form .table-row > div {
+	position: relative;
+}
+
+.extgen-form .form-actions .btn {
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+	text-align: left;
+	font-family: "Trebuchet MS";
+	overflow: visible;
+
+	padding: 7px 30px;
+}
+
+#extgen-msg .alert-info > ul {
+	font-family: monospace;
+	font-size: 12px;
+}

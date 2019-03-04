@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * @copyright	Copyright (c) {{year}} {{namespaceN}}{{#website}} ({{website}}){{/website}}. All rights reserved.
+ * @license		http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+-->
+<extension type="plugin" version="3.0" group="{{group}}" method="upgrade">
+	<name>plg_{{group}}_{{prefix}}{{plugin}}</name>
+	<author>{{authorN}}</author>
+	<creationDate>{{month}} {{year}}</creationDate>
+	<copyright>Copyright (c) {{year}} {{namespaceC}}. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>{{email}}</authorEmail>
+	<authorUrl>{{website}}</authorUrl>
+	<version>1.0.0</version>
+	<description>
+	<![CDATA[
+		{{{descriptionN}}}
+	]]>
+	</description>
+
+	<files>
+		<filename plugin="{{prefix}}{{plugin}}">{{prefix}}{{plugin}}.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+	{{#assets}}
+	<media folder="media" destination="plg_{{group}}_{{prefix}}{{plugin}}">
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<filename>index.html</filename>
+	</media>
+
+	{{/assets}}
+	<languages>
+		<language tag="en-GB">en-GB.plg_{{group}}_{{prefix}}{{plugin}}.ini</language>
+		<language tag="en-GB">en-GB.plg_{{group}}_{{prefix}}{{plugin}}.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>
